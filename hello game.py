@@ -33,6 +33,6 @@ def hangman(word): # создаём функцию которая принима
             break
     if not win: #если вы не выйграли
        print("\n".join(stages[0: wrong]))
-       print("вы выйграли, было загадоно слово: { }.".format(word))
+       print("вы выйграли, было загадоно слово: ",word)
 hangman("кот")
 
