@@ -1,6 +1,6 @@
 var a = 2;
-while (True){
-  var a += 1;
+while (true){
+  var a =+ 1;
   if (a == 2){
     console.log('отчислен')
     break
