@@ -4,8 +4,6 @@ c = Canvas(t, width=1000, height=500)
 t.title("go!")
 c.pack()
 
-o = PhotoImage(file="Новый проект.png")
-j = c.create_image(0,0,anchor=NW, image=o)
 pi = PhotoImage(file="sbk.png")
 ig = c.create_image(500,250,anchor=NW,image=pi)
 
