@@ -14,14 +14,13 @@ while True:
         p_s.append(new_socket)
         time.sleep(1)
     except:
-        print("нету никого")
+        countinue
     try:
         for s in p_s:
             d = s.recv(1024)
             j = d.decode()
-            print(j)
     except:
-        print("нет послания")
+        countinue
     for s in p_s:
         try:
             s.send("послание с сервера".encode())
@@ -29,4 +28,4 @@ while True:
             p_s.remove(s)
             s.close()
     time.sleep(1)
-Socket.close()
+
